@@ -225,7 +225,7 @@ body {
 }
 
 .headline-1 p {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -261,7 +261,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .headline-1 p {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -270,7 +270,7 @@ body {
   }
 
   .headline-2 p {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
