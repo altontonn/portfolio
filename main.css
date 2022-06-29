@@ -36,7 +36,7 @@ body {
 .newton {
   margin-left: 5rem;
   color: #fff;
-  font-family:'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -149,7 +149,6 @@ body {
   .navigation__icon::after {
     top: 0.5rem;
   }
-
 }
 
 .bar1,
@@ -204,10 +203,9 @@ body {
   .content-1 {
     margin-left: 2rem;
   }
-
 }
 
-.headline h1 {
+.headline p {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -219,29 +217,28 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .headline h1 {
+  .headline p {
     font-size: 56px;
     line-height: 64px;
     letter-spacing: 0.37px;
   }
 }
 
-.headline-1 h2 {
-  font-family: 'Roboto', sans-serif;
+.headline-1 p {
+  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 44px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
   color: #fff5e1;
 }
 
-  @media screen and (max-width: 500px) {
-    .headline-1 h2{
-      font-size: 24px;
-      line-height: 32px;
-    }
-
+@media screen and (max-width: 500px) {
+  .headline-1 p {
+    font-size: 24px;
+    line-height: 32px;
   }
+}
 
 .headline-2 {
   margin-top: -2rem;
@@ -249,7 +246,7 @@ body {
 
 .headline-2 p {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 32px;
   line-height: 32px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -260,13 +257,24 @@ body {
     font-size: 18px;
     line-height: 32px;
   }
-
 }
 
 @media screen and (max-width: 500px) {
   .headline-1 p {
-    font-size: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
     line-height: 32px;
+    color: #fff5e1;
+  }
+
+  .headline-2 p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -277,7 +285,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .sidebar {
-    top: 36rem;
+    top: 31rem;
   }
 }
 
@@ -301,4 +309,8 @@ body {
 
 .sidebar ul li {
   list-style: none;
+}
+
+.sidebar ul li a {
+  width: 1.2rem;
 }
