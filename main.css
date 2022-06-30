@@ -462,7 +462,7 @@ section.works ul li a {
   background: rgba(255, 255, 255, 0.24);
   border: 1px solid #8993a4;
   text-decoration: none;
-  font-family: 'Inter' sans-serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -565,6 +565,25 @@ section.works .button2:hover {
 
 .grid-container .work--4-6 {
   background-image: url("./img/Img-Placeholder-grid1\(3\).png");
+}
+
+.about-me h1 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+  color: #ff6b00;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .about-me h1 {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 88px;
+    letter-spacing: 0.37px;
+  }
 }
 
 .grid-container .work h1 {
@@ -677,26 +696,7 @@ section .container-2__p {
   }
 }
 
-.about-me h1 {
-  font-family: 'Crete Round', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 82px;
-  color: #ff6b00;
-  margin-bottom: 1rem;
-}
-
-@media screen and (max-width: 500px) {
-  .about-me h1 {
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 88px;
-    letter-spacing: 0.37px;
-  }
-}
-
-.about-me p {
+section.about-me p {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -706,14 +706,14 @@ section .container-2__p {
 }
 
 @media screen and (max-width: 500px) {
-  .about-me p {
+  section.about-me p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
   }
 }
 
-.about-me a {
+section.about-me a {
   width: 161px;
   height: 48px;
   background: #ff6b00;
@@ -730,14 +730,14 @@ section .container-2__p {
   text-decoration: none;
 }
 
-.container-skill {
+section.container-skill {
   display: flex;
   justify-content: space-around;
   margin: 5rem;
 }
 
 @media screen and (max-width: 500px) {
-  .container-skill {
+  section.container-skill {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -753,6 +753,7 @@ section .container-3 .rectangle {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 section .container-3 .rectangle h2 {
@@ -789,14 +790,14 @@ section .container-3 .bootcamp p {
   color: #fff;
 }
 
-.container-skill .diamond {
+section.container-skill .shape-diamond {
   padding-right: 0.7rem;
 }
 
-.container-skill .rectangle {
+section.container-skill .shape-rectangle {
   padding-right: 2rem;
 }
 
-.container-skill .circle {
+section.container-skill .shape-circle {
   padding-right: 0.5rem;
 }
