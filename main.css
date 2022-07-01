@@ -435,7 +435,7 @@ section.works {
 }
 
 @media screen and (max-width: 500px) {
-  .work--3 p{
+  .work--3 p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -452,19 +452,6 @@ section.works .buttons {
 
 section.works .buttons .button {
   padding: 0.4rem;
-}
-
-section.works .buttons .button a {
-  padding: 10px 12px;
-  background-color: #fff;
-  border: 1px solid #8993a4;
-  text-decoration: none;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #091e42;
 }
 
 .grid-container .languages a {
@@ -500,10 +487,23 @@ section.works ul li a:active {
   color: #fff;
 }
 
+section.works .buttons .button a {
+  padding: 10px 12px;
+  background-color: #fff;
+  border: 1px solid #8993a4;
+  text-decoration: none;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+}
+
 section.works .button2 {
   padding: 10px;
   width: 124px;
-  background: #FF6B00;
+  background: #ff6b00;
   border: none;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -794,7 +794,7 @@ section .container-3 .bootcamp ul li {
   padding-bottom: 19px;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 
