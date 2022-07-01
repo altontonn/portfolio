@@ -797,7 +797,6 @@ section .container-3 .bootcamp ul li {
   color: #fff;
 }
 
-
 @media screen and (max-width: 500px) {
   section .container-3 .bootcamp ul {
     align-items: center;
