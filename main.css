@@ -326,6 +326,7 @@ section.works {
   padding: 20px 0;
   display: grid;
   grid-template-rows: 190px 478px 886px;
+  margin-bottom: 6rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -350,7 +351,7 @@ section.works {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    margin: 6rem;
+    margin: 4rem;
   }
 }
 
@@ -412,7 +413,7 @@ section.works {
   margin-top: -2rem;
 }
 
-.work--3 h1 {
+.work--3 h2 {
   height: 36px;
   font-family: 'Crete Round', Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -433,17 +434,27 @@ section.works {
   padding: 0;
 }
 
-section.works ul {
+@media screen and (max-width: 500px) {
+  .work--3 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 327px;
+    height: 147px;
+  }
+}
+
+section.works .buttons {
   list-style: none;
   display: flex;
   margin-left: -3rem;
 }
 
-section.works ul li {
+section.works .buttons .button {
   padding: 0.4rem;
 }
 
-section.works ul li a {
+section.works .buttons .button a {
   padding: 10px 12px;
   background-color: #fff;
   border: 1px solid #8993a4;
@@ -492,21 +503,18 @@ section.works ul li a:active {
 section.works .button2 {
   padding: 10px;
   width: 124px;
-  background: #ff6b00;
+  background: #FF6B00;
+  border: none;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   text-align: center;
   margin-top: 1rem;
   transition: all 0.5s ease-out;
-}
-
-section.works .button2:hover {
-  background-color: #aa5315;
 }
 
 .dark-font {
@@ -544,7 +552,7 @@ section.works .button2:hover {
 }
 
 .grid-container .work--4-1 {
-  background-image: url("./img/Img-Placeholder-grid1\(1\).png");
+  background-image: url("./img/Img-Placeholder\(4\).png");
 }
 
 .grid-container .work--4-2 {
@@ -586,7 +594,7 @@ section.works .button2:hover {
   }
 }
 
-.grid-container .work h1 {
+.grid-container .work h3 {
   height: 81px;
   width: 295px;
   font-family: 'Crete Round', sans-serif;
@@ -600,7 +608,7 @@ section.works .button2:hover {
 }
 
 .grid-container .container {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 
 .grid-container .work p {
@@ -614,14 +622,14 @@ section.works .button2:hover {
   padding-left: 1rem;
 }
 
-.grid-container .languages {
+.grid-container .languages ul {
   display: flex;
-  flex-direction: row;
-  padding-left: 1rem;
+  list-style: none;
+  margin-left: -1.5rem;
 }
 
 .grid-container .link {
-  width: 328px;
+  width: 327px;
   height: 48px;
   background: #fc7617;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -631,19 +639,19 @@ section.works .button2:hover {
   line-height: 24px;
   border: none;
   letter-spacing: 0.03em;
-  color: #000;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  margin-top: 15.2rem;
+  margin-top: 3rem;
 }
 
 /********************************** My work ********************************/
 
 section.about-me {
   background: #1c1a19;
-  padding: 120px 0;
+  padding: 100px 0;
   background-image: url(./img/illustration-about\ me@2x.png);
   background-repeat: no-repeat;
   background-size: 528px 400px;
@@ -680,6 +688,7 @@ section.about-me {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -4rem;
   }
 }
 
@@ -730,14 +739,14 @@ section .p-link {
   text-decoration: none;
 }
 
-section.container-skill {
+section .container-skill {
   display: flex;
   justify-content: space-around;
   margin: 5rem;
 }
 
 @media screen and (max-width: 500px) {
-  section.container-skill {
+  section .container-skill {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -768,15 +777,29 @@ section .container-3 .rectangle h2 {
   color: #fff;
 }
 
-section .container-3 .bootcamp {
+section .container-3 .bootcamp ul {
   display: flex;
   flex-direction: column;
+  list-style: none;
   align-items: baseline;
-  padding: 0 12px;
+  padding: 0;
 }
 
+section .container-3 .bootcamp ul li {
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  padding-bottom: 19px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+
 @media screen and (max-width: 500px) {
-  section .container-3 .bootcamp {
+  section .container-3 .bootcamp ul {
     align-items: center;
   }
 }
@@ -790,14 +813,14 @@ section .container-3 .bootcamp p {
   color: #fff;
 }
 
-section.container-skill .shape-diamond {
+section .container-skill .shape-diamond {
   padding-right: 0.7rem;
 }
 
-section.container-skill .shape-rectangle {
-  padding-right: 2rem;
+section .container-skill .shape-rectangle {
+  padding-right: 1rem;
 }
 
-section.container-skill .shape-circle {
+section .container-skill .shape-circle {
   padding-right: 0.5rem;
 }
