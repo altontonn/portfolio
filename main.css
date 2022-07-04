@@ -55,6 +55,7 @@ body {
   display: flex;
   position: absolute;
   right: 0;
+  top: -0.3rem;
 }
 
 .menu {
@@ -154,7 +155,6 @@ body {
 .bar1,
 .bar2,
 .bar3 {
-  margin: 4px 0;
   padding: 1.4rem;
 }
 
@@ -248,11 +248,12 @@ body {
 }
 
 .headline-2 p {
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 32px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #F4F5F7;
 }
 
 @media screen and (max-width: 950px) {
@@ -313,6 +314,7 @@ body {
 
 .sidebar ul li {
   list-style: none;
+  padding-bottom: 1.2rem;
 }
 
 .sidebar ul li a {
@@ -451,6 +453,7 @@ section.works .buttons {
 
 section.works .buttons .button {
   padding: 0.4rem;
+  float: left;
 }
 
 .grid-container .languages a {
