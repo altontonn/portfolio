@@ -446,7 +446,6 @@ section.works {
 
 section.works .buttons {
   list-style: none;
-  display: flex;
   margin-left: -3rem;
 }
 
