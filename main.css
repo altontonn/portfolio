@@ -458,7 +458,6 @@ section.works .buttons .button {
 
 .grid-container .languages a {
   padding: 10px 12px;
-  margin-right: 1rem;
   background: rgba(255, 255, 255, 0.24);
   border: 1px solid #8993a4;
   text-decoration: none;
@@ -531,7 +530,7 @@ section.works .button2 {
 
 @media screen and (max-width: 500px) {
   .grid-container {
-    gap: 2rem;
+    gap: 4rem;
     display: flex;
     flex-direction: column;
   }
@@ -575,6 +574,32 @@ section.works .button2 {
 
 .grid-container .work--4-6 {
   background-image: url("./img/Img-Placeholder-grid1\(3\).png");
+}
+
+@media screen and (max-width: 500px) {
+  .grid-container .work--4-1 {
+    background-image: url("./img/Img-Placeholder\(4\).png");
+  }
+  
+  .grid-container .work--4-2 {
+    background-image: url("./img/Img-Placeholder\(4\).png");
+  }
+  
+  .grid-container .work--4-3 {
+    background-image: url("./img/Img-Placeholder\(4\).png");
+  }
+  
+  .grid-container .work--4-4 {
+    background-image: url("./img/Img-Placeholder\(4\).png");
+  }
+  
+  .grid-container .work--4-5 {
+    background-image: url("./img/Img-Placeholder\(4\).png");
+  }
+  
+  .grid-container .work--4-6 {
+    background-image: url("./img/Img-Placeholder\(4\).png");
+  }
 }
 
 .about-me h1 {
@@ -891,10 +916,11 @@ textarea {
   line-height: 24px;
 }
 
+.contact-area textarea {
+  background: #FBF8F7;
+}
 
 .submit-btn {
-  width: 107px;
-  padding: 12px;
   gap: 10px;
   width: 131px;
   height: 48px;
@@ -904,7 +930,6 @@ textarea {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
   color: #000;
@@ -913,6 +938,34 @@ textarea {
 
 .submit-btn:hover {
   background: #f36804;
+}
+
+@media screen and (max-width: 500px) {
+  .submit-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+section.footer {
+  display: flex;
+  background-color: #fff;
+  border-top: 1px solid #dfe1e6;
+  justify-content: center;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+section ul li {
+  padding: 1rem;
 }
 
 
