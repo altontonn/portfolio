@@ -834,12 +834,6 @@ section .container-skill .shape-circle {
   justify-content: center;
 }
 
-@media screen and (max-width: 500px) {
-  .contact-form {
-    
-  }
-}
-
 .contact-text {
   padding: 0 24px;
   font-family: 'Inter', sans-serif;
@@ -859,6 +853,27 @@ section .container-skill .shape-circle {
   gap: 20px;
   padding: 0 24px;
   width: 684px;
+}
+
+@media screen and (max-width: 500px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-text {
+    width: 327px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .contact-area form{
+    width: 327px;
+  }
 }
 
 .contact-area form input[type="text"],
