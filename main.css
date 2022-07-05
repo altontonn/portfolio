@@ -825,3 +825,79 @@ section .container-skill .shape-rectangle {
 section .container-skill .shape-circle {
   padding-right: 0.5rem;
 }
+
+/************************** Contact form *************************/
+.contact-form {
+  background-color: #fff;
+  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .contact-form {
+    
+  }
+}
+
+.contact-text {
+  padding: 0 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin-bottom: 70px;
+  margin-top: -1.5rem;
+  width: 455px;
+}
+
+.contact-area form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 24px;
+  width: 684px;
+}
+
+.contact-area form input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 48px);
+  padding: 15px 16px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+
+.submit-btn {
+  width: 107px;
+  padding: 12px;
+  gap: 10px;
+  width: 131px;
+  height: 48px;
+  background: #ff6b00;
+  font-family: 'Inter' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000;
+  border: none;
+}
+
+.submit-btn:hover {
+  background: #f36804;
+}
+
+
