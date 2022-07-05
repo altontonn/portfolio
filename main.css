@@ -253,7 +253,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
-  color: #F4F5F7;
+  color: #f4f5f7;
 }
 
 @media screen and (max-width: 950px) {
@@ -458,6 +458,7 @@ section.works .buttons .button {
 
 .grid-container .languages a {
   padding: 10px 12px;
+  margin-right: 1rem;
   background: rgba(255, 255, 255, 0.24);
   border: 1px solid #8993a4;
   text-decoration: none;
@@ -530,7 +531,7 @@ section.works .button2 {
 
 @media screen and (max-width: 500px) {
   .grid-container {
-    gap: 4rem;
+    gap: 2rem;
     display: flex;
     flex-direction: column;
   }
@@ -580,23 +581,23 @@ section.works .button2 {
   .grid-container .work--4-1 {
     background-image: url("./img/Img-Placeholder\(4\).png");
   }
-  
+
   .grid-container .work--4-2 {
     background-image: url("./img/Img-Placeholder\(4\).png");
   }
-  
+
   .grid-container .work--4-3 {
     background-image: url("./img/Img-Placeholder\(4\).png");
   }
-  
+
   .grid-container .work--4-4 {
     background-image: url("./img/Img-Placeholder\(4\).png");
   }
-  
+
   .grid-container .work--4-5 {
     background-image: url("./img/Img-Placeholder\(4\).png");
   }
-  
+
   .grid-container .work--4-6 {
     background-image: url("./img/Img-Placeholder\(4\).png");
   }
@@ -896,7 +897,7 @@ section .container-skill .shape-circle {
     line-height: 44px;
   }
 
-  .contact-area form{
+  .contact-area form {
     width: 327px;
   }
 }
@@ -917,7 +918,7 @@ textarea {
 }
 
 .contact-area textarea {
-  background: #FBF8F7;
+  background: #fbf8f7;
 }
 
 .submit-btn {
@@ -925,7 +926,7 @@ textarea {
   width: 131px;
   height: 48px;
   background: #ff6b00;
-  font-family: 'Inter' sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -957,14 +958,14 @@ section.footer {
   justify-content: center;
 }
 
-.footer ul {
+.footer .f-unordered {
   list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-section ul li {
+.footer .f-unordered .f-list {
   padding: 1rem;
 }
 
