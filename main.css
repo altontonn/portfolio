@@ -470,17 +470,17 @@ section.works .buttons .button {
   color: #fff;
 }
 
+.grid-container .languages a:hover {
+  background-color: #fdfbfa;
+  font-weight: bold;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
 .grid-container .languages a:enabled {
   background-color: #ff6b00;
   font-weight: bold;
   color: #fff;
-}
-
-.grid-container .languages a:hover {
-  background-color: #fff5e1;
-  font-weight: bold;
-  color: #f55800;
-  border: 1px solid #f55800;
 }
 
 .grid-container .languages a:active {
@@ -508,17 +508,17 @@ section.works .buttons .button a {
   color: #091e42;
 }
 
-section.works .buttons .button a:enabled {
+section.works .buttons .button a:link {
   background-color: #ff6b00;
   font-weight: bold;
   color: #fff;
 }
 
 section.works .buttons .button a:hover {
-  background-color: #fff5e1;
+  background-color: hsl(20, 43%, 99%);
   font-weight: bold;
-  color: #f55800;
-  border: 1px solid #f55800;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
 }
 
 section.works .buttons .button a:active {
@@ -548,6 +548,19 @@ section.works .button2 {
   text-align: center;
   margin-top: 1rem;
   transition: all 0.5s ease-out;
+}
+
+section.works .button2:hover {
+  background-color: hsl(20, 43%, 99%);
+  font-weight: bold;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+section.works .button2:active {
+  background-color: #e05304;
+  font-weight: bold;
+  color: #f4f1f0;
 }
 
 .dark-font {
@@ -706,6 +719,19 @@ section.works .button2 {
   margin-top: 3rem;
 }
 
+.grid-container .link:hover {
+  background-color: #fdfbfa;
+  font-weight: bold;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.grid-container .link:active {
+  background-color: #e05304;
+  font-weight: bold;
+  color: #f4f1f0;
+}
+
 /********************************** My work ********************************/
 
 section.about-me {
@@ -791,11 +817,24 @@ section .p-link {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #000;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+
+section .p-link:hover {
+  background-color: #fdfbfa;
+  font-weight: bold;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+section .p-link:active {
+  background-color: #e05304;
+  font-weight: bold;
+  color: #f4f1f0;
 }
 
 section .container-skill {
@@ -970,7 +1009,17 @@ textarea {
 }
 
 .submit-btn:hover {
-  background: #f36804;
+  background-color: #fdfbfa;
+  font-weight: bold;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+  cursor: pointer;
+}
+
+.submit-btn:active {
+  background-color: #e05304;
+  font-weight: bold;
+  color: #f4f1f0;
 }
 
 @media screen and (max-width: 500px) {
