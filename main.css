@@ -217,7 +217,7 @@ body {
 }
 
 @media screen and (max-width: 950px) {
-  .headline-1 p{
+  .headline-1 p {
     font-size: 18px;
     line-height: 32px;
   }
@@ -355,7 +355,6 @@ section.works {
     gap: 2rem;
   }
 }
-
 
 @media screen and (max-width: 500px) {
   section.works {
@@ -659,17 +658,19 @@ section.works .button2:active {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  margin: 0 8rem;
+  row-gap: 1rem;
+  margin-left: 1rem;
+  margin-right: -5rem;
 }
 
 @media screen and (max-width: 950px) {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    margin: 0 8rem;
     gap: 2rem;
   }
 }
+
 @media screen and (max-width: 650px) {
   .grid-container {
     display: flex;
@@ -703,26 +704,38 @@ section.works .button2:active {
 
 .grid-container .work--4-1 {
   background-image: url("./img/Img-Placeholder-grid1\(1\).png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .grid-container .work--4-2 {
   background-image: url("./img/Img-Placeholder-grid1\(2\).png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .grid-container .work--4-3 {
   background-image: url("./img/Img-Placeholder-grid1\(3\).png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .grid-container .work--4-4 {
   background-image: url("./img/Img-Placeholder\(4\).png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .grid-container .work--4-5 {
   background-image: url("./img/Img-Placeholder-grid1\(2\).png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .grid-container .work--4-6 {
   background-image: url("./img/Img-Placeholder-grid1\(3\).png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 500px) {
@@ -865,20 +878,6 @@ section.works .button2:active {
   margin-top: 3rem;
 }
 
-.grid-container .work--4-1 .link {
-  margin-top: 17.3rem;
-}
-
-@media screen and (max-width: 500px) {
-  .grid-container .work--4-1 .link {
-    margin-top: 1.5rem;
-  }
-
-  .grid-container .link {
-    width: 327px;
-  }
-}
-
 .grid-container .work--4-2 .link,
 .work--4-3 .link,
 .work--4-4 .link,
@@ -896,6 +895,20 @@ section.works .button2:active {
   .work--4-6 .link {
     display: block;
     visibility: visible;
+  }
+}
+
+.grid-container .work--4-1 .link {
+  margin-top: 17.3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .grid-container .work--4-1 .link {
+    margin-top: 1.5rem;
+  }
+
+  .grid-container .link {
+    width: 327px;
   }
 }
 
@@ -923,7 +936,7 @@ section.about-me {
   background-position: right 15%;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) {
   section.about-me {
     background-image: url(./img/Frame-1.png);
     background-repeat: no-repeat;
@@ -957,7 +970,7 @@ section.about-me {
   }
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) {
   section .container-2 {
     display: flex;
     flex-direction: column;
@@ -1145,12 +1158,13 @@ section .container-skill .shape-circle {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 32px;
+  line-height: 44px;
   color: #172b4d;
   margin-bottom: 70px;
   margin-top: -1.5rem;
-  width: 455px;
+  width: 327px;
+  text-align: center;
 }
 
 .contact-area form {
@@ -1181,16 +1195,6 @@ section .container-skill .shape-circle {
   .contact-text {
     text-align: center;
   }
-} 
-
-.contact-text {
-  width: 327px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
 }
 
 .contact-area form {
