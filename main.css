@@ -470,23 +470,29 @@ section.works .buttons .button {
   color: #fff;
 }
 
-section.works ul li a:enabled {
+.grid-container .languages a:enabled {
   background-color: #ff6b00;
   font-weight: bold;
   color: #fff;
 }
 
-section.works ul li a:hover {
-  background-color: #fdfbfa;
+.grid-container .languages a:hover {
+  background-color: #fff5e1;
   font-weight: bold;
-  color: #ff6b00;
-  border: 1px solid #ff6b00;
+  color: #f55800;
+  border: 1px solid #f55800;
 }
 
-section.works ul li a:active {
-  background-color: #f87111d7;
+.grid-container .languages a:active {
+  background-color: #e05304;
   font-weight: bold;
-  color: #fff;
+  color: #f4F1f0;
+}
+
+.grid-container .languages .disabled {
+  pointer-events: none;
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
 
 section.works .buttons .button a {
@@ -500,6 +506,31 @@ section.works .buttons .button a {
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
+}
+
+section.works .buttons .button a:enabled {
+  background-color: #ff6b00;
+  font-weight: bold;
+  color: #fff;
+}
+
+section.works .buttons .button a:hover {
+  background-color: #fff5e1;
+  font-weight: bold;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+section.works .buttons .button a:active {
+  background-color: #e05304;
+  font-weight: bold;
+  color: #f4F1f0;
+}
+
+section.works .buttons .button .disabled {
+  pointer-events: none;
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
 
 section.works .button2 {
@@ -895,6 +926,7 @@ section .container-skill .shape-circle {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
+    text-align: center;
   }
 
   .contact-area form {
@@ -933,7 +965,7 @@ textarea {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #000;
+  color: #fff;
   border: none;
 }
 
@@ -963,10 +995,6 @@ section.footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.footer .img-icon {
-  width: 1.2rem;
 }
 
 .footer .f-unordered .f-list {
