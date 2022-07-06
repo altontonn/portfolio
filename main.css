@@ -1034,7 +1034,6 @@ textarea {
 
 section.footer {
   display: flex;
-  background-color: #fff;
   border-top: 1px solid #dfe1e6;
   justify-content: center;
 }
@@ -1042,10 +1041,9 @@ section.footer {
 .footer .f-unordered {
   list-style: none;
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
 .footer .f-unordered .f-list {
-  padding: 1rem;
+  padding-right: 2rem;
 }
