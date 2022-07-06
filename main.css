@@ -486,7 +486,7 @@ section.works .buttons .button {
 .grid-container .languages a:active {
   background-color: #e05304;
   font-weight: bold;
-  color: #f4F1f0;
+  color: #f4f1f0;
 }
 
 .grid-container .languages .disabled {
@@ -524,7 +524,7 @@ section.works .buttons .button a:hover {
 section.works .buttons .button a:active {
   background-color: #e05304;
   font-weight: bold;
-  color: #f4F1f0;
+  color: #f4f1f0;
 }
 
 section.works .buttons .button .disabled {
