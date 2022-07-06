@@ -216,6 +216,13 @@ body {
   margin-bottom: -2rem;
 }
 
+@media screen and (max-width: 950px) {
+  .headline-1 p{
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .headline p {
     font-size: 56px;
@@ -256,7 +263,7 @@ body {
   color: #f4f5f7;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 500px) {
   .headline-1 p {
     font-size: 18px;
     line-height: 32px;
@@ -331,6 +338,25 @@ section.works {
   margin-bottom: 6rem;
 }
 
+@media screen and (min-width: 951px) {
+  section.works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  section.works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+
 @media screen and (max-width: 500px) {
   section.works {
     display: flex;
@@ -347,6 +373,15 @@ section.works {
   margin: 8rem;
 }
 
+@media screen and (max-width: 950px) {
+  .work--1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .work--1 {
     display: flex;
@@ -360,6 +395,18 @@ section.works {
 .line {
   height: 1px;
   width: 750px;
+}
+
+@media screen and (min-width: 951px) {
+  .line {
+    width: 527px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .line {
+    width: 427px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -385,6 +432,15 @@ section.works {
   margin: 0 8rem;
 }
 
+@media screen and (max-width: 950px) {
+  .container-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .container-work {
     display: flex;
@@ -394,8 +450,20 @@ section.works {
 
 .work--2 {
   background-image: url("img/Img-Placeholder-1.png");
-  width: 684px;
+  width: 584px;
   height: 448px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 950px) {
+  .work--2 {
+    background-size: contain;
+    width: 427px;
+    height: 315px;
+    background-repeat: no-repeat;
+    transition: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -413,6 +481,15 @@ section.works {
   display: flex;
   flex-direction: column;
   margin-top: -2rem;
+}
+
+@media screen and (max-width: 950px) {
+  .work--3 {
+    width: 427px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -2rem;
+  }
 }
 
 .work--3 h2 {
@@ -495,6 +572,18 @@ section.works .buttons .button {
   color: #5b5957;
 }
 
+.grid-container .work--4-1 .languages a {
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  .grid-container .work--4-1 .languages a {
+    display: block;
+    visibility: visible;
+  }
+}
+
 section.works .buttons .button a {
   padding: 10px 12px;
   background-color: #fff;
@@ -573,6 +662,21 @@ section.works .button2:active {
   margin: 0 8rem;
 }
 
+@media screen and (max-width: 950px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 0 8rem;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .grid-container {
     gap: 2rem;
@@ -598,7 +702,7 @@ section.works .button2:active {
 }
 
 .grid-container .work--4-1 {
-  background-image: url("./img/Img-Placeholder\(4\).png");
+  background-image: url("./img/Img-Placeholder-grid1\(1\).png");
 }
 
 .grid-container .work--4-2 {
@@ -666,7 +770,7 @@ section.works .button2:active {
   }
 }
 
-.grid-container .work h3 {
+.grid-container .work .p1 {
   height: 81px;
   width: 295px;
   font-family: 'Crete Round', sans-serif;
@@ -676,7 +780,31 @@ section.works .button2:active {
   line-height: 44px;
   color: #fff;
   padding-left: 1rem;
-  margin-top: 0;
+  margin-top: 4rem;
+}
+
+.grid-container .work .h2-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .grid-container .work .h2-mobile {
+    display: block;
+    height: 81px;
+    width: 295px;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+    padding-left: 1rem;
+    margin-top: 0;
+  }
+
+  .grid-container .work .p1 {
+    margin-top: 0;
+  }
 }
 
 .grid-container .container {
@@ -694,6 +822,24 @@ section.works .button2:active {
   padding-left: 1rem;
 }
 
+.grid-container .work .p-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .grid-container .work .p-mobile {
+    display: block;
+    width: 295px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    padding-left: 1rem;
+  }
+}
+
 .grid-container .languages ul {
   display: flex;
   list-style: none;
@@ -701,7 +847,7 @@ section.works .button2:active {
 }
 
 .grid-container .link {
-  width: 327px;
+  width: 328px;
   height: 48px;
   background: #fc7617;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -717,6 +863,40 @@ section.works .button2:active {
   align-items: center;
   text-decoration: none;
   margin-top: 3rem;
+}
+
+.grid-container .work--4-1 .link {
+  margin-top: 17.3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .grid-container .work--4-1 .link {
+    margin-top: 1.5rem;
+  }
+
+  .grid-container .link {
+    width: 327px;
+  }
+}
+
+.grid-container .work--4-2 .link,
+.work--4-3 .link,
+.work--4-4 .link,
+.work--4-5 .link,
+.work--4-6 .link {
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  .grid-container .work--4-2 .link,
+  .work--4-3 .link,
+  .work--4-4 .link,
+  .work--4-5 .link,
+  .work--4-6 .link {
+    display: block;
+    visibility: visible;
+  }
 }
 
 .grid-container .link:hover {
@@ -740,7 +920,16 @@ section.about-me {
   background-image: url(./img/illustration-about\ me@2x.png);
   background-repeat: no-repeat;
   background-size: 528px 400px;
-  background-position: right top;
+  background-position: right 15%;
+}
+
+@media screen and (max-width: 950px){
+  section.about-me {
+    background-image: url(./img/Frame-1.png);
+    background-repeat: no-repeat;
+    background-size: 217px 200px;
+    background-position: 100% 20%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -753,10 +942,10 @@ section.about-me {
 }
 
 .img-2 {
-  width: 100%;
   height: 2px;
   margin-top: 8rem;
-  margin-left: -1rem;
+  margin-left: 6rem;
+  width: 80%;
 }
 
 @media screen and (max-width: 500px) {
@@ -765,6 +954,13 @@ section.about-me {
     height: 2px;
     margin-top: 14rem;
     margin-left: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 950px){
+  section .container-2 {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -781,7 +977,13 @@ section .container-2__p {
   display: flex;
   flex-direction: column;
   margin: 1rem 3rem;
-  width: 566px;
+  width: 516px;
+}
+
+@media screen and (max-width: 950px) {
+  section .container-2__p {
+    width: 430px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -841,6 +1043,14 @@ section .container-skill {
   display: flex;
   justify-content: space-around;
   margin: 5rem;
+}
+
+@media screen and (max-width: 650px) {
+  section .container-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -951,26 +1161,40 @@ section .container-skill .shape-circle {
   width: 684px;
 }
 
+@media screen and (max-width: 650px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+}
 
+@media screen and (max-width: 950px) {
   .contact-text {
-    width: 327px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
     text-align: center;
   }
+} 
 
-  .contact-area form {
-    width: 327px;
-  }
+.contact-text {
+  width: 327px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.contact-area form {
+  width: 327px;
 }
 
 .contact-area form input[type="text"],
