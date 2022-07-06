@@ -878,7 +878,7 @@ section.works .button2:active {
   margin-top: 3rem;
 }
 
-.grid-container .work--4-2 .link,
+.work--4-2 .link,
 .work--4-3 .link,
 .work--4-4 .link,
 .work--4-5 .link,
@@ -898,6 +898,12 @@ section.works .button2:active {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .grid-container .link {
+    width: 327px;
+  }
+}
+
 .grid-container .work--4-1 .link {
   margin-top: 17.3rem;
 }
@@ -905,10 +911,6 @@ section.works .button2:active {
 @media screen and (max-width: 500px) {
   .grid-container .work--4-1 .link {
     margin-top: 1.5rem;
-  }
-
-  .grid-container .link {
-    width: 327px;
   }
 }
 
@@ -1164,7 +1166,6 @@ section .container-skill .shape-circle {
   margin-bottom: 70px;
   margin-top: -1.5rem;
   width: 327px;
-  text-align: center;
 }
 
 .contact-area form {
@@ -1189,16 +1190,16 @@ section .container-skill .shape-circle {
     flex-direction: column;
     align-items: center;
   }
-}
 
-@media screen and (max-width: 950px) {
   .contact-text {
     text-align: center;
   }
 }
 
-.contact-area form {
-  width: 327px;
+@media screen and (max-width: 950px) {
+  .contact-area form {
+    width: 327px;
+  }
 }
 
 .contact-area form input[type="text"],
