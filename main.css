@@ -888,7 +888,7 @@ section.works .button2:active {
 }
 
 @media screen and (max-width: 500px) {
-  .grid-container .work--4-2 .link,
+  .work--4-2 .link,
   .work--4-3 .link,
   .work--4-4 .link,
   .work--4-5 .link,
