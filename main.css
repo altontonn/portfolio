@@ -692,7 +692,7 @@ section.works .button2:active {
 .grid-container .work {
   width: 369px;
   height: 386px;
-  display: flex;  
+  display: flex;
 }
 
 @media screen and (max-width: 500px) {
