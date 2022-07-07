@@ -44,6 +44,18 @@ body {
   position: absolute;
   left: 0;
   top: 1rem;
+  animation-name: slidein;
+  animation-duration: 4s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: 5rem;
+  }
 }
 
 .bar-1 {
@@ -1215,8 +1227,20 @@ textarea {
   line-height: 24px;
 }
 
+.contact-area form input[type="text"]:hover {
+  transform: translate(10px);
+}
+
+.contact-area form input[type="email"]:hover {
+  transform: translate(10px);
+}
+
 .contact-area textarea {
   background: #fbf8f7;
+}
+
+.contact-area form textarea:hover {
+  transform: translate(10px);
 }
 
 .submit-btn {
@@ -1233,6 +1257,7 @@ textarea {
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
+  transition: width 2s, height 2s, background-color 2s;
 }
 
 .submit-btn:hover {
@@ -1241,6 +1266,8 @@ textarea {
   color: #ff6b00;
   border: 1px solid #ff6b00;
   cursor: pointer;
+  width: 134px;
+  height: 51px;
 }
 
 .submit-btn:active {
