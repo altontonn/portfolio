@@ -1215,6 +1215,18 @@ textarea {
   line-height: 24px;
 }
 
+.contact-area form input[type="text"]:hover {
+  transform: translate(10px);
+}
+
+.contact-area form input[type="email"]:hover {
+  transform: translate(10px);
+}
+
+.contact-area form textarea:hover {
+  transform: translate(10px);
+}
+
 .contact-area textarea {
   background: #fbf8f7;
 }
