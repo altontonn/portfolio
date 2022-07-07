@@ -1257,7 +1257,7 @@ textarea {
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
-  transition: width 2s, height 2s, background-color 2s, color 2s;
+  transition: width 2s, height 2s, background-color 2s;
 }
 
 .submit-btn:hover {
