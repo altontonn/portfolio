@@ -1,37 +1,47 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/altontonn/portfolio/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Portfolio
 
-### Markdown
+> My Personal Portfolio
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**Additional description about the project and its features.**
 
-```markdown
-Syntax highlighted code block
+## ⚒️ Built With
 
-# Header 1
-## Header 2
-### Header 3
+- HTML & CSS $ FLEX & GRID LAYOUT
+- Add media query to style my desktop version
 
-- Bulleted
-- List
+## Live Demo
+[live-demo](https://altontonn.github.io/portfolio/)
 
-1. Numbered
-2. List
+## 🧰 Tools
 
-**Bold** and _Italic_ and `Code` text
+The following tools help make it easier to run this code.
 
-[Link](url) and ![Image](src)
+- [Visual Studio Code](https://code.visualstudio.com/): A source code editor
+
+## 🔥 Getting Started
+
+If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
+[Download the ZIP from this location](https://github.com/altontonn/portfolio/archive/refs/heads/main.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
+
+```bash
+git https://github.com/altontonn/portfolio.git
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+- Once the files are downloaded or cloned on your machine, open the "Portfolio" folder in [Visual Studio Code(VSCode)](https://code.visualstudio.com/)
+- Optionally you can simply open the index.html file located in the "personal-portfolio" folder with your preferred browser
 
-### Jekyll Themes
+## 🙎🏾‍♂️ Author
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/altontonn/portfolio/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- GitHub: [Newton Alumasa](https://github.com/altontonn)
+- Twitter: [Newton Alumasa](https://twitter.com/AlumasaNewton)
+- LinkedIn: [Newton Alumasa](https://linkedin.com/in/NewtonAlumasa)
 
-### Support or Contact
+## 👊🏾 Show your support
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
