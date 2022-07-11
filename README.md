@@ -11,6 +11,9 @@
 - HTML & CSS $ FLEX & GRID LAYOUT
 - Add media query to style my desktop version
 
+## Live Demo
+[live-demo](https://altontonn.github.io/portfolio/)
+
 ## 🧰 Tools
 
 The following tools help make it easier to run this code.
