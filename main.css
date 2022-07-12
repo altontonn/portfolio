@@ -774,7 +774,7 @@ section.works .button2:active {
   }
 }
 
-.about-me h1 {
+.about-me h2 {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
@@ -785,7 +785,7 @@ section.works .button2:active {
 }
 
 @media screen and (max-width: 500px) {
-  .about-me h1 {
+  .about-me h2 {
     font-weight: 400;
     font-size: 72px;
     line-height: 88px;
