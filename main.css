@@ -137,9 +137,19 @@ body {
   .bar-menu {
     position: absolute;
     top: 5%;
-    left: 14%;
+    left: 17%;
     transform: translate(-50%, 50%);
     width: 51rem;
+  }
+
+  .bar-menu a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+    margin-left: 24rem;
   }
 
   .menu hr {

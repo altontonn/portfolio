@@ -7,3 +7,13 @@ checkbox.addEventListener("click", function () {
         menu.style.display = 'block';
     }
 });
+
+function closeNav(){
+    document.getElementById("navi-toggle").checked = false;
+    let navOpen = document.querySelector('.menu');
+    if (navOpen.style.display === 'block') {
+        navOpen.style.display = 'none';
+    } else {
+        navOpen.style.display = 'block';
+    }
+}
