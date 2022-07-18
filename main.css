@@ -70,7 +70,7 @@ body {
   right: 0;
 }
 
-.bar-menu a{
+.bar-menu a {
   padding: 1.4rem;
 }
 
@@ -190,7 +190,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
 .bar-menu hr {
     width: 86vw;
     margin-left: 22.3rem;
@@ -198,8 +198,8 @@ hr {
   }
 }
 
-@media screen and (max-width: 400px){
-.bar-menu hr {
+@media screen and (max-width: 400px) {
+  .bar-menu hr {
     width: 83vw;
     margin-left: 22.9rem;
     display: block;
