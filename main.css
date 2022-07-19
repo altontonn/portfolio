@@ -190,7 +190,7 @@ hr {
 }
 
 @media screen and (max-width: 450px) {
-.bar-menu hr {
+  .bar-menu hr {
     width: 86vw;
     margin-left: 22.3rem;
     display: block;
