@@ -1,5 +1,6 @@
 const checkbox = document.querySelector('.navigation__checkbox');
 const menu = document.querySelector('.bar');
+const navToggle = document.getElementById('navi-toggle');
 
 checkbox.addEventListener('click', () => {
   if (menu.style.display === 'block') {
@@ -29,5 +30,3 @@ closeContact.addEventListener('click', closeNav);
 
 const closeEmail = document.querySelector('.closeEmail');
 closeEmail.addEventListener('click', closeNav);
-
-const navToggle = document.getElementById('navi-toggle');
