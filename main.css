@@ -65,9 +65,8 @@ body {
 }
 
 .bar-menu {
-  display: flex;
-  position: absolute;
-  right: 0;
+  display: block;
+  margin-top: 1rem;
 }
 
 .bar-menu a {
