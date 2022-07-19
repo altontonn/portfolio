@@ -58,54 +58,43 @@ body {
   }
 }
 
-.bar-1 {
-  display: none;
-  visibility: hidden;
-}
-
 .bar {
-  display: flex;
   position: absolute;
-  right: 0;
+  right: 4rem;
   top: -0.3rem;
 }
 
-.menu {
+.bar-menu {
+  display: block;
+  margin-top: 1rem;
+}
+
+.bar-menu a {
+  padding: 1.4rem;
+}
+
+hr {
   display: none;
-  visibility: hidden;
 }
 
 .navigation__checkbox,
 .navigation__button,
-.navigation__background,
-.navigation__icon,
-.menu2 {
+.navigation__icon {
   display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .newton {
     margin-left: 2rem;
   }
 
-  .bar {
-    display: none;
-  }
-
-  .bar-1 {
-    display: block;
-    visibility: visible;
-  }
-
-  .menu2,
   .navigation__button,
-  .navigation__background,
   .navigation__icon {
     display: block;
     visibility: visible;
   }
 
-  .menu {
+  .bar {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -114,20 +103,14 @@ body {
     z-index: 5;
     visibility: visible;
     opacity: 0;
-    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
-  .bar-menu {
-    position: absolute;
-    top: 5%;
-    left: 14%;
-    transform: translate(-50%, 50%);
-    width: 51rem;
-  }
-
-  .menu hr {
-    width: 27rem;
-    margin-left: 22rem;
+  .navigation__checkbox:checked ~ .bar {
+    background: #3e3c3c;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
   }
 
   .navigation__button {
@@ -137,6 +120,7 @@ body {
     position: absolute;
     right: 0.8rem;
     top: 16px;
+    z-index: 9;
   }
 
   .navigation__icon,
@@ -162,12 +146,63 @@ body {
   .navigation__icon::after {
     top: 0.5rem;
   }
+
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    background-color: transparent;
+  }
+
+  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    margin-top: 0.5rem;
+    transform: rotate(45deg);
+  }
+
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(-90deg);
+  }
+
+  .bar-menu {
+    position: absolute;
+    top: 5%;
+    left: 18%;
+    transform: translate(-50%, 15%);
+    width: 51rem;
+    display: block;
+  }
+
+  .bar-menu a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    display: block;
+    line-height: 44px;
+    color: #fff;
+    margin-left: 24rem;
+    padding: 0.4rem;
+  }
+
+  .bar-menu hr {
+    width: 89vw;
+    margin-left: 21.5rem;
+    display: block;
+  }
 }
 
-.bar1,
-.bar2,
-.bar3 {
-  padding: 1.4rem;
+@media screen and (max-width: 450px) {
+  .bar-menu hr {
+    width: 86vw;
+    margin-left: 22.3rem;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bar-menu hr {
+    width: 83vw;
+    margin-left: 22.9rem;
+    display: block;
+  }
 }
 
 .content {
