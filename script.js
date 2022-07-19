@@ -19,7 +19,7 @@ function closeNav() {
   }
 }
 
-const closePort = document.querySelector('closePort');
+const closePort = document.querySelector('.closePort');
 closePort.addEventListener('click', closeNav);
 
 const closeAbout = document.querySelector('.closeAbout');
