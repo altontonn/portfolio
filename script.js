@@ -32,13 +32,27 @@ const closeEmail = document.querySelector('.closeEmail');
 closeEmail.addEventListener('click', closeNav);
 
 // popup
-let popupContainer = document.querySelector('.popup-container');
+const popupContainer = document.querySelector('.popup-container');
+const popup = document.querySelector('.popup');
+function PopUp() {
+    if (popupContainer.classList.contains('show')) {
+    } else {
+      popupContainer.classList.add('show')
+    }
+}
+popup.addEventListener('click', PopUp);
+
+const closeBtn = () => {
+  popupContainer.classList.remove('show');
+}
+closeBtn();
+
 let myArray = [
   {
     heading: 'Keeping track of hundreds  of components website',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     technologies: ['Css', 'Html', 'Ruby on Rails'],
-    image: ['Snapshoot.png', 'Icon-see.svg', 'githubpop.png']
+    image: ['Snapshoot.png', 'popExport.png', 'pop-GitHub.png']
   }
 ];
 
@@ -46,24 +60,96 @@ document.getElementById('popup-container').innerHTML = myArray.map(myArray =>
   `
   <div class="overlay"></div>
   <div class="popup-content" id="popupContent">
-      <div class="pop-header">
-          <p class="pop-text">${myArray.heading}</p>
-          <span class="popup-close" id="popupClose"></span>
-      </div>
-      <ul class="pop-skills">
-          <li><a>${myArray.technologies[0]}</a></li>
-          <li><a>${myArray.technologies[1]}</a></li>
-          <li><a>${myArray.technologies[2]}</a></li>
-      </ul>
-  <div class="img-text">
-      <img src="img/${myArray.image}" class="pop-img" alt="popup-image">
+    <div class="pop-header">
+        <p class="pop-text">${myArray.heading}</p>
+        <span class="popup-close" id="popupClose" onclick="closeBtn()"></span>
+    </div>
+    <ul class="pop-skills">
+        <li><a>${myArray.technologies[0]}</a></li>
+        <li><a>${myArray.technologies[1]}</a></li>
+        <li><a>${myArray.technologies[2]}</a></li>
+    </ul>
+    <div class="img-text">
+      <img src="img/${myArray.image[0]}" class="pop-img" alt="popup-image">
       <div class="text-container">
-          <p>${myArray.description}</p>
-          <div class="pop-link">
-              <a href="" class="pop-button">See Project<img src="img/${myArray.image[1]}"></a>
-              <a href="" class="pop-button">See Project<img src="img/${myArray.image[2]}"></a>
-          </div>
+        <p>${myArray.description}</p>
+        <div class="pop-link">
+            <a href="#" class="pop-button">See Project<img src="img/${myArray.image[1]}" class="pop-src"></a>
+            <a href="#" class="pop-button">See Project<img src="img/${myArray.image[2]}" class="pop-src"></a>
+        </div>
       </div>
+    </div>
   </div>`
 ).join("");
 
+//portfolio project popup
+//portfolios
+let portfolios = [
+  {
+    id: 1,
+    title: '',
+    details: '',
+    skills: [''],
+    btn: "See project"
+  },
+  {
+    id: 2,
+    title: "Data Dashboard Healthcare",
+    details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    skills: ['html', 'bootstrap', 'Ruby'],
+    btn: "See project"
+  },
+  {
+    id: 3,
+    title: "Website Portfolio",
+    details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    skills: ['html', 'bootstrap', 'Ruby'],
+    btn: "See project"
+  },
+  {
+    id: 4,
+    title: "Profesional Art Printing Data More",
+    details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    skills: ['html', 'bootstrap', 'Ruby'],
+    btn: "See project"
+  },
+  {
+    id: 5,
+    title: "Data Dashboard Healthcare",
+    details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    skills: ['html', 'bootstrap', 'Ruby'],
+    btn: "See project"
+  },
+  {
+    id: 6,
+    title: "Website Portfolio",
+    details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    skills: ['html', 'bootstrap', 'Ruby'],
+    btn: "See project"
+  },
+]
+
+document.getElementById('grid-container').innerHTML = portfolios.map(port =>
+  `<div class="work work--4-${port.id}">
+      <div class="container">
+          <h1 class="p1">${port.title}</h1>
+          <p>${port.details}</p>
+          <div class="languages">
+              <a href="" class="button">${port.skills[0]}</a>
+              <a href="" class="button">${port.skills[1]}</a>
+              <a href="" class="button">${port.skills[2]}</a>
+          </div>
+          <button class="link popPort" id="myBtn">${port.btn}</button>
+      </div>
+    </div>`
+  ).join("");
+
+ const gridPort = document.querySelector('.popup-container');
+ const popPort = document.querySelector('.popPort');
+ function PopPort() {
+  if (gridPort.classList.contains('show')) {
+  } else {
+    gridPort.classList.add('show')
+  }
+}
+popPort.addEventListener('click', PopPort);
