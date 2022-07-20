@@ -2,6 +2,7 @@ const checkbox = document.querySelector('.navigation__checkbox');
 const menu = document.querySelector('.bar');
 const navToggle = document.getElementById('navi-toggle');
 
+
 checkbox.addEventListener('click', () => {
   if (menu.style.display === 'block') {
     menu.style.display = 'none';
@@ -12,11 +13,13 @@ checkbox.addEventListener('click', () => {
 
 function closeNav() {
   navToggle.checked = false;
-  if (menu.style.display === 'flex') {
-    menu.style.display = 'none';
-  } else {
-    menu.style.display = 'flex';
-  }
+  checkbox.addEventListener('click', () => {
+    if (menu.style.display === 'block') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'block';
+    }
+  });
 }
 
 const closePort = document.querySelector('.closePort');
@@ -87,45 +90,51 @@ document.getElementById('popup-container').innerHTML = myArray.map(myArray =>
 let portfolios = [
   {
     id: 1,
-    title: '',
-    details: '',
-    skills: [''],
-    btn: "See project"
+    title: "",
+    details: "",
+    skills: '',
+    btn: "See project",
+    classname: 'popPort1'
   },
   {
     id: 2,
     title: "Data Dashboard Healthcare",
     details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     skills: ['html', 'bootstrap', 'Ruby'],
-    btn: "See project"
+    btn: "See project",
+    classname: 'popPort2'
   },
   {
     id: 3,
     title: "Website Portfolio",
     details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     skills: ['html', 'bootstrap', 'Ruby'],
-    btn: "See project"
+    btn: "See project",
+    classname: 'popPort3'
   },
   {
     id: 4,
     title: "Profesional Art Printing Data More",
     details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     skills: ['html', 'bootstrap', 'Ruby'],
-    btn: "See project"
+    btn: "See project",
+    classname: 'popPort4'
   },
   {
     id: 5,
     title: "Data Dashboard Healthcare",
     details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     skills: ['html', 'bootstrap', 'Ruby'],
-    btn: "See project"
+    btn: "See project",
+    classname: 'popPort5'
   },
   {
     id: 6,
     title: "Website Portfolio",
     details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     skills: ['html', 'bootstrap', 'Ruby'],
-    btn: "See project"
+    btn: "See project",
+    classname: 'popPort6'
   },
 ]
 
@@ -139,17 +148,68 @@ document.getElementById('grid-container').innerHTML = portfolios.map(port =>
               <a href="" class="button">${port.skills[1]}</a>
               <a href="" class="button">${port.skills[2]}</a>
           </div>
-          <button class="link popPort" id="myBtn">${port.btn}</button>
+          <button class="link ${port.classname}" id="myBtn">${port.btn}</button>
       </div>
     </div>`
   ).join("");
 
+  //work1
  const gridPort = document.querySelector('.popup-container');
- const popPort = document.querySelector('.popPort');
+ const popPort1 = document.querySelector('.popPort1');
  function PopPort() {
   if (gridPort.classList.contains('show')) {
   } else {
     gridPort.classList.add('show')
   }
 }
-popPort.addEventListener('click', PopPort);
+popPort1.addEventListener('click', PopPort);
+
+//work2
+const popPort2 = document.querySelector('.popPort2');
+ function PopPort() {
+  if (gridPort.classList.contains('show')) {
+  } else {
+    gridPort.classList.add('show')
+  }
+}
+popPort2.addEventListener('click', PopPort);
+
+//work3
+const popPort3 = document.querySelector('.popPort3');
+ function PopPort() {
+  if (gridPort.classList.contains('show')) {
+  } else {
+    gridPort.classList.add('show')
+  }
+}
+popPort3.addEventListener('click', PopPort);
+
+//work4
+const popPort4 = document.querySelector('.popPort4');
+ function PopPort() {
+  if (gridPort.classList.contains('show')) {
+  } else {
+    gridPort.classList.add('show')
+  }
+}
+popPort4.addEventListener('click', PopPort);
+
+//work5
+const popPort5 = document.querySelector('.popPort5');
+ function PopPort() {
+  if (gridPort.classList.contains('show')) {
+  } else {
+    gridPort.classList.add('show')
+  }
+}
+popPort5.addEventListener('click', PopPort);
+
+//work6
+const popPort6 = document.querySelector('.popPort6');
+ function PopPort() {
+  if (gridPort.classList.contains('show')) {
+  } else {
+    gridPort.classList.add('show')
+  }
+}
+popPort6.addEventListener('click', PopPort);

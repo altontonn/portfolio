@@ -101,7 +101,7 @@ hr {
     top: 0;
     right: 0;
     z-index: 5;
-    visibility: visible;
+    display: none;
     opacity: 0;
     transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
@@ -782,13 +782,6 @@ section.works .buttons .button {
   visibility: hidden;
 }
 
-@media screen and (max-width: 500px) {
-  .grid-container .work--4-1 .languages a {
-    display: block;
-    visibility: visible;
-  }
-}
-
 section.works .buttons .button a {
   padding: 10px 12px;
   background-color: #fff;
@@ -1124,7 +1117,7 @@ section.works .button2:active {
 
 @media screen and (max-width: 500px) {
   .grid-container .work--4-1 .link {
-    margin-top: 4.8rem;
+    margin-top: 13.1rem;
   }
 
   .grid-container .work--4-2 .link,
