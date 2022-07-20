@@ -2,7 +2,6 @@ const checkbox = document.querySelector('.navigation__checkbox');
 const menu = document.querySelector('.bar');
 const navToggle = document.getElementById('navi-toggle');
 
-
 checkbox.addEventListener('click', () => {
   if (menu.style.display === 'block') {
     menu.style.display = 'none';
@@ -38,10 +37,11 @@ closeEmail.addEventListener('click', closeNav);
 const popupContainer = document.querySelector('.popup-container');
 const popup = document.querySelector('.popup');
 function PopUp() {
-    if (popupContainer.classList.contains('show')) {
-    } else {
-      popupContainer.classList.add('show')
-    }
+  if (popupContainer.classList.contains('show')) {
+    popupContainer.classList.contains('show');
+  } else {
+    popupContainer.classList.add('show');
+  }
 }
 popup.addEventListener('click', PopUp);
 
@@ -50,18 +50,17 @@ const closeBtn = () => {
 }
 closeBtn();
 
-let myArray = [
+const myArray = [
   {
     heading: 'Keeping track of hundreds  of components website',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     technologies: ['Css', 'Html', 'Ruby on Rails'],
-    image: ['Snapshoot.png', 'popExport.png', 'pop-GitHub.png']
+    image: ['Snapshoot.png', 'popExport.png', 'pop-GitHub.png'],
   }
 ];
 
 document.getElementById('popup-container').innerHTML = myArray.map(myArray =>
-  `
-  <div class="overlay"></div>
+  `<div class="overlay"></div>
   <div class="popup-content" id="popupContent">
     <div class="pop-header">
         <p class="pop-text">${myArray.heading}</p>
@@ -82,18 +81,17 @@ document.getElementById('popup-container').innerHTML = myArray.map(myArray =>
         </div>
       </div>
     </div>
-  </div>`
-).join("");
+  </div>`).join('');
 
 //portfolio project popup
-//portfolios
-let portfolios = [
+
+const portfolios = [
   {
     id: 1,
-    title: "",
-    details: "",
+    title: '',
+    details: '',
     skills: '',
-    btn: "See project",
+    btn: 'See project',
     classname: 'popPort1'
   },
   {
@@ -106,110 +104,121 @@ let portfolios = [
   },
   {
     id: 3,
-    title: "Website Portfolio",
-    details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    title: 'Website Portfolio',
+    details: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'bootstrap', 'Ruby'],
-    btn: "See project",
+    btn: 'See project',
     classname: 'popPort3'
   },
   {
     id: 4,
-    title: "Profesional Art Printing Data More",
-    details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    title: 'Profesional Art Printing Data More',
+    details: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'bootstrap', 'Ruby'],
-    btn: "See project",
+    btn: 'See project',
     classname: 'popPort4'
   },
   {
     id: 5,
-    title: "Data Dashboard Healthcare",
-    details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    title: 'Data Dashboard Healthcare',
+    details: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'bootstrap', 'Ruby'],
-    btn: "See project",
+    btn: 'See project',
     classname: 'popPort5'
   },
   {
     id: 6,
-    title: "Website Portfolio",
-    details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    title: 'Website Portfolio',
+    details: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'bootstrap', 'Ruby'],
-    btn: "See project",
+    btn: 'See project',
     classname: 'popPort6'
   },
 ]
 
 document.getElementById('grid-container').innerHTML = portfolios.map(port =>
-  `<div class="work work--4-${port.id}">
-      <div class="container">
-          <h1 class="p1">${port.title}</h1>
-          <p>${port.details}</p>
-          <div class="languages">
-              <a href="" class="button">${port.skills[0]}</a>
-              <a href="" class="button">${port.skills[1]}</a>
-              <a href="" class="button">${port.skills[2]}</a>
-          </div>
-          <button class="link ${port.classname}" id="myBtn">${port.btn}</button>
-      </div>
-    </div>`
-  ).join("");
+`<div class="work work--4-${port.id}">
+  <div class="container">
+    <h1 class="p1">${port.title}</h1>
+    <p>${port.details}</p>
+    <div class="languages">
+        <a href="" class="button">${port.skills[0]}</a>
+        <a href="" class="button">${port.skills[1]}</a>
+        <a href="" class="button">${port.skills[2]}</a>
+    </div>
+    <button class="link ${port.classname}" id="myBtn">${port.btn}</button>
+  </div>
+</div>`).join("");
 
   //work1
- const gridPort = document.querySelector('.popup-container');
- const popPort1 = document.querySelector('.popPort1');
- function popPort_1() {
+
+const gridPort = document.querySelector('.popup-container');
+const popPort1 = document.querySelector('.popPort1');
+function popPorta() {
   if (gridPort.classList.contains('show')) {
+    gridPort.classList.contains('show');
   } else {
-    gridPort.classList.add('show')
+    gridPort.classList.add('show');
   }
 }
-popPort1.addEventListener('click', popPort_1);
+popPort1.addEventListener('click', popPorta);
 
 //work2
+
 const popPort2 = document.querySelector('.popPort2');
- function popPort_2() {
+ function popPortb() {
   if (gridPort.classList.contains('show')) {
+    gridPort.classList.contains('show');
   } else {
-    gridPort.classList.add('show')
+    gridPort.classList.add('show');
   }
 }
-popPort2.addEventListener('click', popPort_2);
+popPort2.addEventListener('click', popPortb);
 
 //work3
+
 const popPort3 = document.querySelector('.popPort3');
- function popPort_3() {
+ function popPortc() {
   if (gridPort.classList.contains('show')) {
+    gridPort.classList.contains('show');
   } else {
-    gridPort.classList.add('show')
+    gridPort.classList.add('show');
   }
 }
-popPort3.addEventListener('click', popPort_3);
+popPort3.addEventListener('click', popPortc);
 
 //work4
+
 const popPort4 = document.querySelector('.popPort4');
- function popPort_4() {
+ function popPortd() {
   if (gridPort.classList.contains('show')) {
+    gridPort.classList.contains('show');
   } else {
-    gridPort.classList.add('show')
+    gridPort.classList.add('show');
   }
 }
-popPort4.addEventListener('click', popPort_4);
+popPort4.addEventListener('click', popPortd);
 
 //work5
+
 const popPort5 = document.querySelector('.popPort5');
- function popPort_5() {
+ function popPorte() {
   if (gridPort.classList.contains('show')) {
+    gridPort.classList.contains('show');
   } else {
-    gridPort.classList.add('show')
+    gridPort.classList.add('show');
   }
 }
-popPort5.addEventListener('click', popPort_5);
+popPort5.addEventListener('click', popPorte);
 
 //work6
+
 const popPort6 = document.querySelector('.popPort6');
- function popPort_6() {
+ function popPortf() {
   if (gridPort.classList.contains('show')) {
+    gridPort.classList.contains('show');
   } else {
-    gridPort.classList.add('show')
+    gridPort.classList.add('show');
   }
 }
-popPort6.addEventListener('click', popPort_6);
+popPort6.addEventListener('click', popPortf);

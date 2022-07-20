@@ -581,10 +581,6 @@ section.works .buttons .button {
   justify-content: space-between;
 }
 
-.popup-container {
-  display: none;
-}
-
 .popup-container.show {
   display: block;
 }
