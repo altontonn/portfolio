@@ -59,8 +59,8 @@ const myArray = [
   },
 ];
 
-document.getElementById('popup-container').innerHTML = myArray.map(myArray => {
-`<div class="overlay"></div>
+document.getElementById('popup-container').innerHTML = myArray.map((myArray) => (
+  `<div class="overlay"></div>
   <div class="popup-content" id="popupContent">
     <div class="pop-header">
         <p class="pop-text">${myArray.heading}</p>
@@ -81,7 +81,8 @@ document.getElementById('popup-container').innerHTML = myArray.map(myArray => {
         </div>
       </div>
     </div>
-  </div>`}).join('');
+  </div>`
+)).join('');
 
 // portfolio project popup
 
@@ -134,10 +135,10 @@ const portfolios = [
     btn: 'See project',
     classname: 'popPort6',
   },
-]
+];
 
-document.getElementById('grid-container').innerHTML = portfolios.map(port => {
-`<div class="work work--4-${port.id}">
+document.getElementById('grid-container').innerHTML = portfolios.map((port) => (
+  `<div class="work work--4-${port.id}">
   <div class="container">
     <h1 class="p1">${port.title}</h1>
     <p>${port.details}</p>
@@ -148,7 +149,8 @@ document.getElementById('grid-container').innerHTML = portfolios.map(port => {
     </div>
     <button class="link ${port.classname}" id="myBtn">${port.btn}</button>
   </div>
-</div>`}).join('');
+</div>`
+)).join('');
 
 // work1
 
