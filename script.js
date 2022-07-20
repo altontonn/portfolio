@@ -68,9 +68,9 @@ document.getElementById('popup-container').innerHTML = myArray.map(myArray =>
         <span class="popup-close" id="popupClose" onclick="closeBtn()"></span>
     </div>
     <ul class="pop-skills">
-        <li><a>${myArray.technologies[0]}</a></li>
-        <li><a>${myArray.technologies[1]}</a></li>
-        <li><a>${myArray.technologies[2]}</a></li>
+        <li class="skills-li"><a class="skills-a">${myArray.technologies[0]}</a></li>
+        <li class="skills-li"><a class="skills-a">${myArray.technologies[1]}</a></li>
+        <li class="skills-li"><a class="skills-a">${myArray.technologies[2]}</a></li>
     </ul>
     <div class="img-text">
       <img src="img/${myArray.image[0]}" class="pop-img" alt="popup-image">
@@ -156,60 +156,60 @@ document.getElementById('grid-container').innerHTML = portfolios.map(port =>
   //work1
  const gridPort = document.querySelector('.popup-container');
  const popPort1 = document.querySelector('.popPort1');
- function PopPort() {
+ function popPort_1() {
   if (gridPort.classList.contains('show')) {
   } else {
     gridPort.classList.add('show')
   }
 }
-popPort1.addEventListener('click', PopPort);
+popPort1.addEventListener('click', popPort_1);
 
 //work2
 const popPort2 = document.querySelector('.popPort2');
- function PopPort() {
+ function popPort_2() {
   if (gridPort.classList.contains('show')) {
   } else {
     gridPort.classList.add('show')
   }
 }
-popPort2.addEventListener('click', PopPort);
+popPort2.addEventListener('click', popPort_2);
 
 //work3
 const popPort3 = document.querySelector('.popPort3');
- function PopPort() {
+ function popPort_3() {
   if (gridPort.classList.contains('show')) {
   } else {
     gridPort.classList.add('show')
   }
 }
-popPort3.addEventListener('click', PopPort);
+popPort3.addEventListener('click', popPort_3);
 
 //work4
 const popPort4 = document.querySelector('.popPort4');
- function PopPort() {
+ function popPort_4() {
   if (gridPort.classList.contains('show')) {
   } else {
     gridPort.classList.add('show')
   }
 }
-popPort4.addEventListener('click', PopPort);
+popPort4.addEventListener('click', popPort_4);
 
 //work5
 const popPort5 = document.querySelector('.popPort5');
- function PopPort() {
+ function popPort_5() {
   if (gridPort.classList.contains('show')) {
   } else {
     gridPort.classList.add('show')
   }
 }
-popPort5.addEventListener('click', PopPort);
+popPort5.addEventListener('click', popPort_5);
 
 //work6
 const popPort6 = document.querySelector('.popPort6');
- function PopPort() {
+ function popPort_6() {
   if (gridPort.classList.contains('show')) {
   } else {
     gridPort.classList.add('show')
   }
 }
-popPort6.addEventListener('click', PopPort);
+popPort6.addEventListener('click', popPort_6);

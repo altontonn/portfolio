@@ -569,9 +569,10 @@ section.works .buttons .button {
   padding: 0.4rem;
   float: left;
 }
+
 /************************* popup container **********************/
 .popup-container {
-  border: 1px solid #EBECF0;
+  border: 1px solid #ebecf0;
   display: none;
 }
 
@@ -631,13 +632,13 @@ section.works .buttons .button {
   transform: translate(-50%, -50%);
 }
 
-.pop-text{
+.pop-text {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .pop-skills {
@@ -646,7 +647,8 @@ section.works .buttons .button {
   justify-content: flex-start;
   margin-left: -2rem;
 }
-.pop-skills li {
+
+.pop-skills .skills-li {
   padding: 5px 5px;
   display: flex;
   padding-right: 17px;
@@ -654,13 +656,13 @@ section.works .buttons .button {
   margin-right: 12px;
 }
 
-.pop-skills li a {
+.pop-skills .skills-li .skills-a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
 .pop-img {
@@ -676,18 +678,17 @@ section.works .buttons .button {
   display: flex;
 }
 
-.pop-link a {
+.pop-link .pop-button {
   text-decoration: none;
-  padding-right: 20px;
   margin-right: 2rem;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  background: #F55800  
+  background: #f55800;
 }
 
 .text-container {
@@ -709,7 +710,7 @@ section.works .buttons .button {
 @media screen and (max-width: 500px) {
   .pop-img {
     width: 100%;
-  } 
+  }
 
   .img-text {
     display: flex;
@@ -720,19 +721,20 @@ section.works .buttons .button {
     height: 24px;
   }
 
-  .pop-link a{
+  .pop-link .pop-button {
     display: flex;
     align-items: center;
   }
 
   .pop-text {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 44px
+    line-height: 44px;
   }
 }
+
 /************************* end of popup container **********************/
 .grid-container .languages {
   margin-left: 1rem;
