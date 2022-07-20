@@ -230,6 +230,7 @@ const email = document.querySelector('#email');
 const validationMassege = contactForm.querySelector('#error');
 validationMassege.style.color = '#ff0000';
 validationMassege.style.fontSize = '16px';
+validationMassege.style.fontWeight = 'bold';
 validationMassege.style.padding = '4px';
 validationMassege.style.borderRadius = '2px';
 contactForm.addEventListener('submit', (event) => {
