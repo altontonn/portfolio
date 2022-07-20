@@ -47,7 +47,7 @@ popup.addEventListener('click', PopUp);
 
 const closeBtn = () => {
   popupContainer.classList.remove('show');
-}
+};
 closeBtn();
 
 const myArray = [
@@ -56,11 +56,11 @@ const myArray = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     technologies: ['Css', 'Html', 'Ruby on Rails'],
     image: ['Snapshoot.png', 'popExport.png', 'pop-GitHub.png'],
-  }
+  },
 ];
 
-document.getElementById('popup-container').innerHTML = myArray.map(myArray =>
-  `<div class="overlay"></div>
+document.getElementById('popup-container').innerHTML = myArray.map(myArray => {
+`<div class="overlay"></div>
   <div class="popup-content" id="popupContent">
     <div class="pop-header">
         <p class="pop-text">${myArray.heading}</p>
@@ -81,9 +81,9 @@ document.getElementById('popup-container').innerHTML = myArray.map(myArray =>
         </div>
       </div>
     </div>
-  </div>`).join('');
+  </div>`}).join('');
 
-//portfolio project popup
+// portfolio project popup
 
 const portfolios = [
   {
@@ -92,15 +92,15 @@ const portfolios = [
     details: '',
     skills: '',
     btn: 'See project',
-    classname: 'popPort1'
+    classname: 'popPort1',
   },
   {
     id: 2,
-    title: "Data Dashboard Healthcare",
-    details: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    title: 'Data Dashboard Healthcare',
+    details: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'bootstrap', 'Ruby'],
-    btn: "See project",
-    classname: 'popPort2'
+    btn: 'See project',
+    classname: 'popPort2',
   },
   {
     id: 3,
@@ -108,7 +108,7 @@ const portfolios = [
     details: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'bootstrap', 'Ruby'],
     btn: 'See project',
-    classname: 'popPort3'
+    classname: 'popPort3',
   },
   {
     id: 4,
@@ -116,7 +116,7 @@ const portfolios = [
     details: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'bootstrap', 'Ruby'],
     btn: 'See project',
-    classname: 'popPort4'
+    classname: 'popPort4',
   },
   {
     id: 5,
@@ -124,7 +124,7 @@ const portfolios = [
     details: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'bootstrap', 'Ruby'],
     btn: 'See project',
-    classname: 'popPort5'
+    classname: 'popPort5',
   },
   {
     id: 6,
@@ -132,11 +132,11 @@ const portfolios = [
     details: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'bootstrap', 'Ruby'],
     btn: 'See project',
-    classname: 'popPort6'
+    classname: 'popPort6',
   },
 ]
 
-document.getElementById('grid-container').innerHTML = portfolios.map(port =>
+document.getElementById('grid-container').innerHTML = portfolios.map(port => {
 `<div class="work work--4-${port.id}">
   <div class="container">
     <h1 class="p1">${port.title}</h1>
@@ -148,9 +148,9 @@ document.getElementById('grid-container').innerHTML = portfolios.map(port =>
     </div>
     <button class="link ${port.classname}" id="myBtn">${port.btn}</button>
   </div>
-</div>`).join("");
+</div>`}).join('');
 
-  //work1
+// work1
 
 const gridPort = document.querySelector('.popup-container');
 const popPort1 = document.querySelector('.popPort1');
@@ -163,10 +163,10 @@ function popPorta() {
 }
 popPort1.addEventListener('click', popPorta);
 
-//work2
+// work2
 
 const popPort2 = document.querySelector('.popPort2');
- function popPortb() {
+function popPortb() {
   if (gridPort.classList.contains('show')) {
     gridPort.classList.contains('show');
   } else {
@@ -175,10 +175,10 @@ const popPort2 = document.querySelector('.popPort2');
 }
 popPort2.addEventListener('click', popPortb);
 
-//work3
+// work3
 
 const popPort3 = document.querySelector('.popPort3');
- function popPortc() {
+function popPortc() {
   if (gridPort.classList.contains('show')) {
     gridPort.classList.contains('show');
   } else {
@@ -187,10 +187,10 @@ const popPort3 = document.querySelector('.popPort3');
 }
 popPort3.addEventListener('click', popPortc);
 
-//work4
+// work4
 
 const popPort4 = document.querySelector('.popPort4');
- function popPortd() {
+function popPortd() {
   if (gridPort.classList.contains('show')) {
     gridPort.classList.contains('show');
   } else {
@@ -199,10 +199,10 @@ const popPort4 = document.querySelector('.popPort4');
 }
 popPort4.addEventListener('click', popPortd);
 
-//work5
+// work5
 
 const popPort5 = document.querySelector('.popPort5');
- function popPorte() {
+function popPorte() {
   if (gridPort.classList.contains('show')) {
     gridPort.classList.contains('show');
   } else {
@@ -211,10 +211,10 @@ const popPort5 = document.querySelector('.popPort5');
 }
 popPort5.addEventListener('click', popPorte);
 
-//work6
+// work6
 
 const popPort6 = document.querySelector('.popPort6');
- function popPortf() {
+function popPortf() {
   if (gridPort.classList.contains('show')) {
     gridPort.classList.contains('show');
   } else {
