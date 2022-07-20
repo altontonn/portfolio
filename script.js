@@ -224,3 +224,24 @@ function popPortf() {
   }
 }
 popPort6.addEventListener('click', popPortf);
+//Form validation
+const contactForm = document.querySelector('#frmContact');
+const email = document.querySelector('#email');
+const validationMassege = contactForm.querySelector('#error');
+validationMassege.style.color = '#ff0000';
+validationMassege.style.fontSize = '16px';
+validationMassege.style.padding = '4px';
+validationMassege.style.borderRadius = '2px';
+contactForm.addEventListener('submit', (event) => {
+  let isValid = false;
+  if (email.value === email.value.toLowerCase()) {
+    isValid = true;
+  }
+  if (isValid === false) {
+    event.preventDefault();
+    validationMassege.innerText = 'Only Lower Case Symbols Allowed';
+    setTimeout(() => {
+      validationMassege.textContent = '';
+    }, 5000);
+  }
+});
