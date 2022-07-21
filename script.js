@@ -247,25 +247,25 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
-  const formData = {
-    userName: document.getElementById('name').value,
-    userEmail: document.getElementById('email').value,
-    userMessage: document.getElementById('text').value,
-  }
+const formData = {
+  userName: document.getElementById('name').value,
+  userEmail: document.getElementById('email').value,
+  userMessage: document.getElementById('text').value,
+};
 
-  let getFormData = window.localStorage.getItem('formData')
-  if(getFormData) {
-    getFormData = JSON.parse(getFormData)
-    document.getElementById('name').value = getFormData.userName
-    document.getElementById('email').value = getFormData.userEmail
-    document.getElementById('text').value = getFormData.userMessage
-  }
+let getFormData = window.localStorage.getItem('formData');
+if (getFormData) {
+  getFormData = JSON.parse(getFormData);
+  document.getElementById('name').value = getFormData.userName;
+  document.getElementById('email').value = getFormData.userEmail;
+  document.getElementById('text').value = getFormData.userMessage;
+}
 
-  Array.from(contactForm).forEach((field) => {
-    field.addEventListener('input', () => {
-      formData.userName = document.getElementById('name')
-      formData.userEmail = document.getElementById('email')
-      formData.userMessage = document.getElementById('text')
-      localStorage.setItem('formData', JSON.stringify(formData))
-    })
-  })
+Array.from(contactForm).forEach((field) => {
+  field.addEventListener('input', () => {
+    formData.userName = document.getElementById('name').value;
+    formData.userEmail = document.getElementById('email').value;
+    formData.userMessage = document.getElementById('text').value;
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+});
