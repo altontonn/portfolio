@@ -6,6 +6,12 @@
 
 **Additional description about the project and its features.**
 
+## Linter for html&css (Stylelint)
+-https://github.com/microverseinc/linters-config/tree/master/html-css
+
+## linter for html&css + javascript (ESlint)
+-https://github.com/microverseinc/linters-config/tree/master/html-css-js
+
 ## ⚒️ Built With
 
 - HTML & CSS $ FLEX & GRID LAYOUT
