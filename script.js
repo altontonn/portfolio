@@ -225,7 +225,7 @@ function popPortf() {
 }
 popPort6.addEventListener('click', popPortf);
 // Form validation
-const contactForm = document.querySelector('frmContact');
+const contactForm = document.querySelector('#frmContact');
 const email = document.querySelector('#email');
 const validationMassege = contactForm.querySelector('#error');
 validationMassege.style.color = '#ff0000';
