@@ -703,6 +703,17 @@ section.works .buttons .button {
   color: #344563;
 }
 
+@media screen and (max-width: 950px) {
+  .img-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pop-img {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .pop-img {
     width: 100%;
