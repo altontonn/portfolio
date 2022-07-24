@@ -18,7 +18,7 @@
 - Add media query to style my desktop version
 
 ## Live Demo
-[live-demo](https://altontonn.github.io/portfolio/)
+- [My portfolio](https://altontonn.github.io/portfolio/)
 
 ## 🧰 Tools
 
